@@ -7,6 +7,7 @@ This driver allows you to mount the flipper zero over its serial connection and 
 ```
 git clone --recursive https://github.com/dakhnod/fzfs.git
 cd fzfs
+git submodule update --init --recursive
 python3 -m venv venv
 . venv/bin/activate
 pip install -r requirements.txt
