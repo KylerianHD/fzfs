@@ -7,7 +7,6 @@ This driver allows you to mount the flipper zero over its serial connection and 
 ```
 git clone --recursive https://github.com/dakhnod/fzfs.git
 cd fzfs
-git submodule update --init --recursive
 python3 -m venv venv
 . venv/bin/activate
 pip install -r requirements.txt
@@ -25,7 +24,7 @@ Then you should be able to access your flipper files through file browser of the
 
 ## Connect via BLE Serial
 
-First, you need to pair your flipper with your computer. Tihs process varies, but a good starting point is:
+First, you need to pair your flipper with your computer. This process varies, but a good starting point is:
 ```
 bluetoothctl
 agent on
